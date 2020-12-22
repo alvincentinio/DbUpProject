@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Scripts\Script0001_CreateTable_EmployeeInfo.sql" />
+    <None Remove="Scripts\Script0002_CreateTable_DepartmentInfo.sql" />
+    <None Remove="Scripts\Script0003_InsertScript_EmployeeInfo_CreateRecord.sql" />
+    <None Remove="Scripts\Script0004_UpdateColumn_EmployeeInfo_StaffNoDuplicate.sql" />
+    <None Remove="Scripts\Script0005_UpdateColumn_EmployeeInfo_StaffNo_Nullable.sql" />
+    <None Remove="Scripts\Script0006_UpdateScript_EmployeeInfo_Populate_StaffNoDuplicate_Delete_StaffNo.sql" />
+    <None Remove="Scripts\Script0007_RenameColumn_EmployeeInfo_StaffNumber.sql" />
+    <None Remove="Scripts\Script0008_UpdateScript_EmployeeInfo_Populate_StaffNumber.sql" />
+    <None Remove="Scripts\Script0009_DeleteColumn_EmployeeInfo_StaffNoDuplicate.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\Script0001_CreateTable_EmployeeInfo.sql" />
+    <EmbeddedResource Include="Scripts\Script0002_CreateTable_DepartmentInfo.sql" />
+    <EmbeddedResource Include="Scripts\Script0003_InsertScript_EmployeeInfo_CreateRecord.sql" />
+    <EmbeddedResource Include="Scripts\Script0004_UpdateColumn_EmployeeInfo_StaffNoDuplicate.sql" />
+    <EmbeddedResource Include="Scripts\Script0005_UpdateColumn_EmployeeInfo_StaffNo_Nullable.sql" />
+    <EmbeddedResource Include="Scripts\Script0006_UpdateScript_EmployeeInfo_Populate_StaffNoDuplicate_Delete_StaffNo.sql" />
+    <EmbeddedResource Include="Scripts\Script0007_RenameColumn_EmployeeInfo_StaffNumber.sql" />
+    <EmbeddedResource Include="Scripts\Script0008_UpdateScript_EmployeeInfo_Populate_StaffNumber.sql" />
+    <EmbeddedResource Include="Scripts\Script0009_DeleteColumn_EmployeeInfo_StaffNoDuplicate.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="dbup" Version="4.5.0" />
+  </ItemGroup>
+
+</Project>
